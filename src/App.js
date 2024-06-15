@@ -9,6 +9,8 @@ import Product from './Components/Modules/Product';
 import Cart from './Components/Pages/Cart';
 import Wishlist from './Components/Pages/Wishlist';
 import LearnHooks from './Components/Modules/LearnHooks';
+import Add from './Components/Pages/Admin/Category/Add';
+import List from './Components/Pages/Admin/Category/List';
 
 function App() {
   return (
@@ -23,6 +25,11 @@ function App() {
         <Route path='/cart' element ={<Cart/>}/>
         <Route path='/wishlist' element ={<Wishlist/>}/>
         <Route path='/learnhooks' element ={<LearnHooks/>}/>
+        <Route path='/admin/category/list' element ={<Add/>}/>
+        {/* <Route path='/form' element ={<Add/>}/> */}
+        <Route path='/list' element ={<List/>}/>
+        
+        
         </Route>
       </Routes>
 
